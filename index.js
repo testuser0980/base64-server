@@ -22,7 +22,7 @@ app.use(
 
 const PORT = process.env.PORT || 4000;
 
-app.use('/', (req,res) => {
+app.get('/', (req,res) => {
   return res.status(200).send({
     success: true,
     message: 'Welcome to Homepage'
